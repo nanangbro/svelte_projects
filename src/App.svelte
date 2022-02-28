@@ -14,9 +14,23 @@
 	let visible = true;
 
 	let src = '/cat.gif';
-	let nameImages = 'Cute Cat';
+	let name_images = 'Cute Cat';
 
 	let string = `here's some <strong>HTML!!!</strong>`;
+
+	//----------Start Reactive declarations
+
+	let count_declarations = 1;
+
+	// the `$:` means 're-run whenever these values change'
+	$: doubled = count * 2;
+	$: quadrupled = doubled * 2;
+
+	//----------End Reactive declarations
+
+	function handleClickDeclarations() {
+		count += 1;
+	}
 </script>
 
 <main>
@@ -60,9 +74,16 @@
 	toggle me
 </label>
 
-<img {src} alt="{nameImages} dancing">
+<img {src} alt="{name_images} dancing">
 
 <p>{@html string}</p>
+
+<button on:click={handleClickDeclarations}>
+	Count: {count_declarations}
+</button>
+
+<p>{count_declarations} * 2 = {doubled}</p>
+<p>{doubled} * 2 = {quadrupled}</p>
 
 <link href="https://fonts.googleapis.com/css?family=Overpass:100,400" rel="stylesheet">
 
