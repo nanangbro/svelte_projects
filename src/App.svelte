@@ -15,6 +15,8 @@
 
 	let src = '/cat.gif';
 	let nameImages = 'Cute Cat';
+
+	let string = `here's some <strong>HTML!!!</strong>`;
 </script>
 
 <main>
@@ -59,6 +61,8 @@
 </label>
 
 <img {src} alt="{nameImages} dancing">
+
+<p>{@html string}</p>
 
 <link href="https://fonts.googleapis.com/css?family=Overpass:100,400" rel="stylesheet">
 
