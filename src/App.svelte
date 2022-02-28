@@ -12,6 +12,9 @@
 	import { inner, outer } from './components/shape.js';
 
 	let visible = true;
+
+	let src = '/cat.gif';
+	let nameImages = 'Cute Cat';
 </script>
 
 <main>
@@ -54,6 +57,8 @@
 	<input type="checkbox" bind:checked={visible}>
 	toggle me
 </label>
+
+<img {src} alt="{nameImages} dancing">
 
 <link href="https://fonts.googleapis.com/css?family=Overpass:100,400" rel="stylesheet">
 
