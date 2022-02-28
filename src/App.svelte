@@ -31,6 +31,17 @@
 	function handleClickDeclarations() {
 		count += 1;
 	}
+
+	let countStatement = 0;
+
+	$: if (countStatement >= 10) {
+		alert(`count is dangerously high!`);
+		countStatement = 9;
+	}
+
+	function handleClickStatement() {
+		countStatement += 1;
+	}
 </script>
 
 <main>
@@ -84,6 +95,10 @@
 
 <p>{count_declarations} * 2 = {doubled}</p>
 <p>{doubled} * 2 = {quadrupled}</p>
+
+<button on:click={handleClickStatement}>
+	Clicked {countStatement} {countStatement === 1 ? 'time' : 'times'}
+</button>
 
 <link href="https://fonts.googleapis.com/css?family=Overpass:100,400" rel="stylesheet">
 
