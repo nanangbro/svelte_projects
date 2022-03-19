@@ -1,104 +1,26 @@
 <script>
+	
+	import Counter from './components/Counter.svelte'
+	import Toggle from './components/Toggle.svelte'
+	import Img from './components/Img.svelte'
+	import String from './components/String.svelte'
+	import Statement from './components/Statement.svelte'
+	import Condition from './components/Condition.svelte';
+
 	export let name;
-	let count = 0;
-
-	function handleClick() {
-		count += 1;
-	}
-
-	import { quintOut } from 'svelte/easing';
-	import { fade, draw, fly } from 'svelte/transition';
-	import { expand } from './components/custom-transitions.js';
-	import { inner, outer } from './components/shape.js';
-
-	let visible = true;
-
-	let src = '/cat.gif';
-	let name_images = 'Cute Cat';
-
-	let string = `here's some <strong>HTML!!!</strong>`;
-
-	//----------Start Reactive declarations
-
-	let count_declarations = 1;
-
-	// the `$:` means 're-run whenever these values change'
-	$: doubled = count * 2;
-	$: quadrupled = doubled * 2;
-
-	//----------End Reactive declarations
-
-	function handleClickDeclarations() {
-		count += 1;
-	}
-
-	let countStatement = 0;
-
-	$: if (countStatement >= 10) {
-		alert(`count is dangerously high!`);
-		countStatement = 9;
-	}
-
-	function handleClickStatement() {
-		countStatement += 1;
-	}
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<Counter />
+	<Toggle />
+	<Img />
+	<String />
+	<Statement />
+	<Condition />
+
 </main>
-
-<button on:click={handleClick}>
-	Clicked {count} {count === 1 ? 'time' : 'times'}
-</button>
-
-{#if visible}
-<div class="maxSVG">
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 124">
-		<g out:fade="{{duration: 200}}" opacity=0.2>
-			<path
-				in:expand="{{duration: 400, delay: 1000, easing: quintOut}}"
-				style="stroke: #ff3e00; fill: #ff3e00; stroke-width: 50;"
-				d={outer}
-			/>
-			<path
-				in:draw="{{duration: 1000}}"
-				style="stroke:#ff3e00; stroke-width: 1.5"
-				d={inner}
-			/>
-		</g>
-	</svg>
-</div>
-
-	<div class="centered" out:fly="{{y: -20, duration: 800}}">
-		{#each 'SVELTE' as char, i}
-			<span
-				in:fade="{{delay: 1000 + i * 150, duration: 800}}"
-			>{char}</span>
-		{/each}
-	</div>
-{/if}
-
-<label>
-	<input type="checkbox" bind:checked={visible}>
-	toggle me
-</label>
-
-<img {src} alt="{name_images} dancing">
-
-<p>{@html string}</p>
-
-<button on:click={handleClickDeclarations}>
-	Count: {count_declarations}
-</button>
-
-<p>{count_declarations} * 2 = {doubled}</p>
-<p>{doubled} * 2 = {quadrupled}</p>
-
-<button on:click={handleClickStatement}>
-	Clicked {countStatement} {countStatement === 1 ? 'time' : 'times'}
-</button>
 
 <link href="https://fonts.googleapis.com/css?family=Overpass:100,400" rel="stylesheet">
 
