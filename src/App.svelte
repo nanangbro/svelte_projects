@@ -6,6 +6,7 @@
 	import String from './components/String.svelte'
 	import Statement from './components/Statement.svelte'
 	import Condition from './components/Condition.svelte';
+	import Nested from './components/Nested.svelte';
 
 	export let name;
 </script>
@@ -19,6 +20,7 @@
 	<String />
 	<Statement />
 	<Condition />
+	<Nested answer={42}/>
 
 </main>
 
