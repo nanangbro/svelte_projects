@@ -7,8 +7,16 @@
 	import Statement from './components/Statement.svelte'
 	import Condition from './components/Condition.svelte';
 	import Nested from './components/Nested.svelte';
+	import Info from './components/Info.svelte';
 
 	export let name;
+
+	const pkg = {
+		name: 'svelte',
+		version: 3,
+		speed: 'blazing',
+		website: 'https://svelte.dev'
+	};
 </script>
 
 <main>
@@ -21,6 +29,8 @@
 	<Statement />
 	<Condition />
 	<Nested answer={42}/>
+	<Nested/>
+	<Info {...pkg}/>
 
 </main>
 
