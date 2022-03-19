@@ -8,6 +8,7 @@
 	import Condition from './components/Condition.svelte';
 	import Nested from './components/Nested.svelte';
 	import Info from './components/Info.svelte';
+	import IfLogin from './components/IfLogin.svelte'
 
 	export let name;
 
@@ -31,6 +32,7 @@
 	<Nested answer={42}/>
 	<Nested/>
 	<Info {...pkg}/>
+	<IfLogin />
 
 </main>
 
