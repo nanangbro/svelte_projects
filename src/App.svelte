@@ -11,6 +11,7 @@
 	import IfLogin from './components/IfLogin.svelte'
 	import Comparison from './components/Comparison.svelte'
 	import EachYoutube from './components/EachYoutube.svelte'
+	import KeyEachThing from './components/KeyEachThing.svelte'
 
 	export let name;
 
@@ -37,6 +38,7 @@
 	<IfLogin />
 	<Comparison />
 	<EachYoutube />
+	<KeyEachThing />
 
 </main>
 
