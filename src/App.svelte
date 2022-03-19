@@ -9,6 +9,7 @@
 	import Nested from './components/Nested.svelte';
 	import Info from './components/Info.svelte';
 	import IfLogin from './components/IfLogin.svelte'
+	import Comparison from './components/Comparison.svelte'
 
 	export let name;
 
@@ -33,6 +34,7 @@
 	<Nested/>
 	<Info {...pkg}/>
 	<IfLogin />
+	<Comparison />
 
 </main>
 
