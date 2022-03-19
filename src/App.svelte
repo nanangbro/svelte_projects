@@ -10,6 +10,7 @@
 	import Info from './components/Info.svelte';
 	import IfLogin from './components/IfLogin.svelte'
 	import Comparison from './components/Comparison.svelte'
+	import EachYoutube from './components/EachYoutube.svelte'
 
 	export let name;
 
@@ -35,6 +36,7 @@
 	<Info {...pkg}/>
 	<IfLogin />
 	<Comparison />
+	<EachYoutube />
 
 </main>
 
