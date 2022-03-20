@@ -19,6 +19,7 @@
 	import AlertCompEvent from './components/AlertCompEvents.svelte'
 	import AlertEventForwarding from './components/AlertEventForwarding.svelte';
 	import CustomButtonComp from './components/CustomButton.svelte'
+	import TextInput from './components/TextInput.svelte'
 
 	export let name;
 
@@ -53,6 +54,7 @@
 	<AlertCompEvent />
 	<AlertEventForwarding />
 	<CustomButtonComp />
+	<TextInput />
 
 </main>
 
