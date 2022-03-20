@@ -25,6 +25,7 @@
 	import GroupInputs from './components/GroupInputs.svelte';
 	import TextareaInputs from './components/TextareaInputs.svelte';
 	import FileInput from './components/FileInput.svelte';
+	import SelectBindings from './components/SelectBindings.svelte';
 
 	export let name;
 
@@ -65,6 +66,7 @@
 	<GroupInputs />
 	<TextareaInputs />
 	<FileInput />
+	<SelectBindings />
 
 </main>
 
