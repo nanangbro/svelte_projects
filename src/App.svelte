@@ -18,6 +18,7 @@
 	import EventModifier from './components/EventModifier.svelte';
 	import AlertCompEvent from './components/AlertCompEvents.svelte'
 	import AlertEventForwarding from './components/AlertEventForwarding.svelte';
+	import CustomButtonComp from './components/CustomButton.svelte'
 
 	export let name;
 
@@ -51,6 +52,7 @@
 	<EventModifier />
 	<AlertCompEvent />
 	<AlertEventForwarding />
+	<CustomButtonComp />
 
 </main>
 
