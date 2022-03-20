@@ -24,6 +24,7 @@
 	import CheckboxInputs from './components/CheckboxInputs.svelte';
 	import GroupInputs from './components/GroupInputs.svelte';
 	import TextareaInputs from './components/TextareaInputs.svelte';
+	import FileInput from './components/FileInput.svelte';
 
 	export let name;
 
@@ -63,6 +64,7 @@
 	<CheckboxInputs />
 	<GroupInputs />
 	<TextareaInputs />
+	<FileInput />
 
 </main>
 
