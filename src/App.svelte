@@ -21,6 +21,7 @@
 	import CustomButtonComp from './components/CustomButton.svelte'
 	import TextInput from './components/TextInput.svelte'
 	import NumericInput from './components/NumericInput.svelte';
+	import CheckboxInputs from './components/CheckboxInputs.svelte';
 
 	export let name;
 
@@ -57,6 +58,7 @@
 	<CustomButtonComp />
 	<TextInput />
 	<NumericInput />
+	<CheckboxInputs />
 
 </main>
 
