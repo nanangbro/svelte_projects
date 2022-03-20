@@ -12,6 +12,7 @@
 	import Comparison from './components/Comparison.svelte'
 	import EachYoutube from './components/EachYoutube.svelte'
 	import KeyEachThing from './components/KeyEachThing.svelte'
+	import GenerateNumber from './components/GenerateNumber.svelte';
 
 	export let name;
 
@@ -39,6 +40,7 @@
 	<Comparison />
 	<EachYoutube />
 	<KeyEachThing />
+	<GenerateNumber />
 
 </main>
 
