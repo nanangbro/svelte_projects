@@ -13,6 +13,7 @@
 	import EachYoutube from './components/EachYoutube.svelte'
 	import KeyEachThing from './components/KeyEachThing.svelte'
 	import GenerateNumber from './components/GenerateNumber.svelte';
+	import MouseMove from './components/MouseMove.svelte'
 
 	export let name;
 
@@ -41,6 +42,7 @@
 	<EachYoutube />
 	<KeyEachThing />
 	<GenerateNumber />
+	<MouseMove />
 
 </main>
 
