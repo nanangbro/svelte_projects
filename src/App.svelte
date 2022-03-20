@@ -14,6 +14,7 @@
 	import KeyEachThing from './components/KeyEachThing.svelte'
 	import GenerateNumber from './components/GenerateNumber.svelte';
 	import MouseMove from './components/MouseMove.svelte'
+	import MouseMoveInlineHandler from './components/MouseMoveInlineHandler.svelte';
 
 	export let name;
 
@@ -43,6 +44,7 @@
 	<KeyEachThing />
 	<GenerateNumber />
 	<MouseMove />
+	<MouseMoveInlineHandler />
 
 </main>
 
