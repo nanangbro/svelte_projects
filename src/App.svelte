@@ -22,6 +22,7 @@
 	import TextInput from './components/TextInput.svelte'
 	import NumericInput from './components/NumericInput.svelte';
 	import CheckboxInputs from './components/CheckboxInputs.svelte';
+	import GroupInputs from './components/GroupInputs.svelte';
 
 	export let name;
 
@@ -59,6 +60,7 @@
 	<TextInput />
 	<NumericInput />
 	<CheckboxInputs />
+	<GroupInputs />
 
 </main>
 
