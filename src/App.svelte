@@ -15,6 +15,7 @@
 	import GenerateNumber from './components/GenerateNumber.svelte';
 	import MouseMove from './components/MouseMove.svelte'
 	import MouseMoveInlineHandler from './components/MouseMoveInlineHandler.svelte';
+	import EventModifier from './components/EventModifier.svelte';
 
 	export let name;
 
@@ -45,6 +46,7 @@
 	<GenerateNumber />
 	<MouseMove />
 	<MouseMoveInlineHandler />
+	<EventModifier />
 
 </main>
 
