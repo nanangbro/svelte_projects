@@ -20,6 +20,7 @@
 	import AlertEventForwarding from './components/AlertEventForwarding.svelte';
 	import CustomButtonComp from './components/CustomButton.svelte'
 	import TextInput from './components/TextInput.svelte'
+	import NumericInput from './components/NumericInput.svelte';
 
 	export let name;
 
@@ -55,6 +56,7 @@
 	<AlertEventForwarding />
 	<CustomButtonComp />
 	<TextInput />
+	<NumericInput />
 
 </main>
 
