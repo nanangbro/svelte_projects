@@ -17,6 +17,7 @@
 	import MouseMoveInlineHandler from './components/MouseMoveInlineHandler.svelte';
 	import EventModifier from './components/EventModifier.svelte';
 	import AlertCompEvent from './components/AlertCompEvents.svelte'
+	import AlertEventForwarding from './components/AlertEventForwarding.svelte';
 
 	export let name;
 
@@ -49,6 +50,7 @@
 	<MouseMoveInlineHandler />
 	<EventModifier />
 	<AlertCompEvent />
+	<AlertEventForwarding />
 
 </main>
 
