@@ -26,6 +26,7 @@
 	import TextareaInputs from './components/TextareaInputs.svelte';
 	import FileInput from './components/FileInput.svelte';
 	import SelectBindings from './components/SelectBindings.svelte';
+	import SelectMultiple from './components/SelectMultiple.svelte';
 
 	export let name;
 
@@ -67,6 +68,7 @@
 	<TextareaInputs />
 	<FileInput />
 	<SelectBindings />
+	<SelectMultiple />
 
 </main>
 
