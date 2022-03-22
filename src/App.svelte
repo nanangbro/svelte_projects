@@ -27,6 +27,7 @@
 	import FileInput from './components/FileInput.svelte';
 	import SelectBindings from './components/SelectBindings.svelte';
 	import SelectMultiple from './components/SelectMultiple.svelte';
+	import EachBlockBindings from './components/EachBlockBindings.svelte';
 
 	export let name;
 
@@ -69,6 +70,7 @@
 	<FileInput />
 	<SelectBindings />
 	<SelectMultiple />
+	<EachBlockBindings />
 
 </main>
 
