@@ -28,6 +28,7 @@
 	import SelectBindings from './components/SelectBindings.svelte';
 	import SelectMultiple from './components/SelectMultiple.svelte';
 	import EachBlockBindings from './components/EachBlockBindings.svelte';
+	import MediaElements from './components/MediaElements.svelte';
 
 	export let name;
 
@@ -71,6 +72,7 @@
 	<SelectBindings />
 	<SelectMultiple />
 	<EachBlockBindings />
+	<MediaElements />
 
 </main>
 
