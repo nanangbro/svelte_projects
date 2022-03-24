@@ -29,6 +29,7 @@
 	import SelectMultiple from './components/SelectMultiple.svelte';
 	import EachBlockBindings from './components/EachBlockBindings.svelte';
 	import MediaElements from './components/MediaElements.svelte';
+	import Dimensions from './components/Dimensions.svelte';
 
 	export let name;
 
@@ -73,6 +74,7 @@
 	<SelectMultiple />
 	<EachBlockBindings />
 	<MediaElements />
+	<Dimensions />
 
 </main>
 
