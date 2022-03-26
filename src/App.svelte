@@ -32,6 +32,7 @@
 	import Dimensions from './components/Dimensions.svelte';
 	import BindThisCanvas from './components/BindThisCanvas.svelte';
 	import ComponentBindings from './components/ComponentBindings.svelte';
+	import OnMount from './components/OnMount.svelte'
 
 	export let name;
 
@@ -79,6 +80,7 @@
 	<Dimensions />
 	<BindThisCanvas />
 	<ComponentBindings />
+	<OnMount />
 
 </main>
 
