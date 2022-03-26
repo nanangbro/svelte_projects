@@ -30,6 +30,8 @@
 	import EachBlockBindings from './components/EachBlockBindings.svelte';
 	import MediaElements from './components/MediaElements.svelte';
 	import Dimensions from './components/Dimensions.svelte';
+	import BindThisCanvas from './components/BindThisCanvas.svelte';
+	import ComponentBindings from './components/ComponentBindings.svelte';
 
 	export let name;
 
@@ -75,6 +77,8 @@
 	<EachBlockBindings />
 	<MediaElements />
 	<Dimensions />
+	<BindThisCanvas />
+	<ComponentBindings />
 
 </main>
 
