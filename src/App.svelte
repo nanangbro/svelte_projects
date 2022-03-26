@@ -33,6 +33,7 @@
 	import BindThisCanvas from './components/BindThisCanvas.svelte';
 	import ComponentBindings from './components/ComponentBindings.svelte';
 	import OnMount from './components/OnMount.svelte'
+	import OnDestroyIntervals from './components/OnDestroyIntervals.svelte';
 
 	export let name;
 
@@ -81,6 +82,7 @@
 	<BindThisCanvas />
 	<ComponentBindings />
 	<OnMount />
+	<OnDestroyIntervals />
 
 </main>
 
