@@ -34,6 +34,7 @@
 	import ComponentBindings from './components/ComponentBindings.svelte';
 	import OnMount from './components/OnMount.svelte'
 	import OnDestroyIntervals from './components/OnDestroyIntervals.svelte';
+	import BeforeAndAfterUpdate from './components/BeforeAndAfterUpdate.svelte';
 
 	export let name;
 
@@ -83,6 +84,7 @@
 	<ComponentBindings />
 	<OnMount />
 	<OnDestroyIntervals />
+	<BeforeAndAfterUpdate />
 
 </main>
 
