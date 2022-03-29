@@ -35,6 +35,7 @@
 	import OnMount from './components/OnMount.svelte'
 	import OnDestroyIntervals from './components/OnDestroyIntervals.svelte';
 	import BeforeAndAfterUpdate from './components/BeforeAndAfterUpdate.svelte';
+	import Tick from './components/Tick.svelte'
 
 	export let name;
 
@@ -85,6 +86,7 @@
 	<OnMount />
 	<OnDestroyIntervals />
 	<BeforeAndAfterUpdate />
+	<Tick />
 
 </main>
 
