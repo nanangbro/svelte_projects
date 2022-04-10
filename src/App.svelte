@@ -44,6 +44,14 @@
 	import IncrementerAutoSubscriptions from './components/stores/stores/auto_subscriptions/Incrementer.svelte';
 	import DecrementerAutoSubscriptions from './components/stores/stores/auto_subscriptions/Decrementer.svelte';
 	import { countAutoSubscriptions } from './components/stores/stores/stores';
+	import { time } from './components/stores/stores/stores';
+
+	const formatter = new Intl.DateTimeFormat('en', {
+		hour12: true,
+		hour: 'numeric',
+		minute: '2-digit',
+		second: '2-digit'
+	});
 
 	export let name;
 
@@ -110,6 +118,7 @@
 	<IncrementerAutoSubscriptions/>
 	<DecrementerAutoSubscriptions/>
 	<ResetterAutoSubscriptions/>
+	<h1>The time is {formatter.format($time)}</h1>
 
 </main>
 
