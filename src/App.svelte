@@ -45,6 +45,7 @@
 	import DecrementerAutoSubscriptions from './components/stores/stores/auto_subscriptions/Decrementer.svelte';
 	import { countAutoSubscriptions } from './components/stores/stores/stores';
 	import { time, elapsed, countCustom } from './components/stores/stores/stores';
+	import Tweened from './components/motions/Tweened.svelte'
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -128,6 +129,7 @@
 	<button on:click={countCustom.increment}>+</button>
 	<button on:click={countCustom.decrement}>-</button>
 	<button on:click={countCustom.reset}>reset</button>
+	<Tweened />
 
 </main>
 
