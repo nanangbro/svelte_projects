@@ -47,6 +47,7 @@
 	import { time, elapsed, countCustom } from './components/stores/stores/stores';
 	import Tweened from './components/motions/Tweened.svelte'
 	import Spring from './components/motions/Spring.svelte'
+	import TransitionsDirective from './components/transitions/TransitionsDirective.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -132,6 +133,7 @@
 	<button on:click={countCustom.reset}>reset</button>
 	<Tweened />
 	<Spring />
+	<TransitionsDirective />
 
 </main>
 
