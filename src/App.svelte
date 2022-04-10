@@ -49,6 +49,7 @@
 	import Spring from './components/motions/Spring.svelte'
 	import TransitionsDirective from './components/transitions/TransitionsDirective.svelte';
 	import AddingParameters from './components/transitions/AddingParameters.svelte';
+	import InOut from './components/transitions/InOut.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -136,6 +137,7 @@
 	<Spring />
 	<TransitionsDirective />
 	<AddingParameters />
+	<InOut />
 
 </main>
 
