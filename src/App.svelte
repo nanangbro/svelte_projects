@@ -36,6 +36,14 @@
 	import OnDestroyIntervals from './components/OnDestroyIntervals.svelte';
 	import BeforeAndAfterUpdate from './components/BeforeAndAfterUpdate.svelte';
 	import Tick from './components/Tick.svelte'
+	import Resetter from './components/stores/Resetter.svelte';
+	import Incrementer from './components/stores/Incrementer.svelte';
+	import Decrementer from './components/stores/Decrementer.svelte';
+	import { countWritable } from './components/stores/stores/stores';
+	import ResetterAutoSubscriptions from './components/stores/stores/auto_subscriptions/Resetter.svelte';
+	import IncrementerAutoSubscriptions from './components/stores/stores/auto_subscriptions/Incrementer.svelte';
+	import DecrementerAutoSubscriptions from './components/stores/stores/auto_subscriptions/Decrementer.svelte';
+	import { countAutoSubscriptions } from './components/stores/stores/stores';
 
 	export let name;
 
@@ -45,6 +53,13 @@
 		speed: 'blazing',
 		website: 'https://svelte.dev'
 	};
+
+	let countValue;
+
+	const unsubscribe = countWritable.subscribe(value => {
+		countValue = value;
+	});
+
 </script>
 
 <main>
@@ -87,6 +102,14 @@
 	<OnDestroyIntervals />
 	<BeforeAndAfterUpdate />
 	<Tick />
+	<h1>The count is {countValue}</h1>
+	<Incrementer/>
+	<Decrementer/>
+	<Resetter/>
+	<h1>The count is {$countAutoSubscriptions}</h1>
+	<IncrementerAutoSubscriptions/>
+	<DecrementerAutoSubscriptions/>
+	<ResetterAutoSubscriptions/>
 
 </main>
 
