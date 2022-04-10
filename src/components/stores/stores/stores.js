@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
-import { readable } from 'svelte/store';
+import { readable, derived } from 'svelte/store';
 
 export const countWritable = writable(0);
 export const countAutoSubscriptions = writable(0);
@@ -14,3 +14,11 @@ export const time = readable(new Date(), function start(set) {
 		clearInterval(interval);
 	};
 });
+
+//Derived Store
+const start = new Date();
+
+export const elapsed = derived(
+	time,
+	$time => Math.round(($time - start) / 1000)
+);
