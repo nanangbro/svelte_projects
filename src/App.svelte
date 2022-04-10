@@ -44,7 +44,7 @@
 	import IncrementerAutoSubscriptions from './components/stores/stores/auto_subscriptions/Incrementer.svelte';
 	import DecrementerAutoSubscriptions from './components/stores/stores/auto_subscriptions/Decrementer.svelte';
 	import { countAutoSubscriptions } from './components/stores/stores/stores';
-	import { time, elapsed } from './components/stores/stores/stores';
+	import { time, elapsed, countCustom } from './components/stores/stores/stores';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -124,6 +124,10 @@
 		This page has been open for
 		{$elapsed} {$elapsed === 1 ? 'second' : 'seconds'}
 	</p>
+	<h1>The count is {$countCustom}</h1>
+	<button on:click={countCustom.increment}>+</button>
+	<button on:click={countCustom.decrement}>-</button>
+	<button on:click={countCustom.reset}>reset</button>
 
 </main>
 
