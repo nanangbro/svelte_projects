@@ -46,6 +46,7 @@
 	import { countAutoSubscriptions } from './components/stores/stores/stores';
 	import { time, elapsed, countCustom } from './components/stores/stores/stores';
 	import Tweened from './components/motions/Tweened.svelte'
+	import Spring from './components/motions/Spring.svelte'
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -130,6 +131,7 @@
 	<button on:click={countCustom.decrement}>-</button>
 	<button on:click={countCustom.reset}>reset</button>
 	<Tweened />
+	<Spring />
 
 </main>
 
