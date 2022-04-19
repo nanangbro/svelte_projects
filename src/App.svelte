@@ -54,6 +54,7 @@
 	import CustomJs from './components/transitions/CustomJS.svelte';
 	import TransitionEvents from './components/transitions/TransitionEvents.svelte';
 	import Deffered from './components/transitions/Deffered.svelte';
+	import AnimateDirective from './components/animations/AnimateDirective.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -146,6 +147,7 @@
 	<CustomJs />
 	<TransitionEvents />
 	<Deffered />
+	<AnimateDirective />
 
 </main>
 
