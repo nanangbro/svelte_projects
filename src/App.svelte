@@ -52,6 +52,8 @@
 	import InOut from './components/transitions/InOut.svelte';
 	import CustomCss from './components/transitions/CustomCss.svelte';
 	import CustomJs from './components/transitions/CustomJS.svelte';
+	import TransitionEvents from './components/transitions/TransitionEvents.svelte';
+	import Deffered from './components/transitions/Deffered.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -142,6 +144,8 @@
 	<InOut />
 	<CustomCss />
 	<CustomJs />
+	<TransitionEvents />
+	<Deffered />
 
 </main>
 
