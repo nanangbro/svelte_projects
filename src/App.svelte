@@ -56,6 +56,7 @@
 	import Deffered from './components/transitions/Deffered.svelte';
 	import AnimateDirective from './components/animations/AnimateDirective.svelte';
 	import Visualiser from './components/eases/Visualiser.svelte';
+	import Clock from './components/svgs/Clock.svelte'
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -150,6 +151,7 @@
 	<Deffered />
 	<AnimateDirective />
 	<Visualiser />
+	<Clock />
 
 </main>
 
