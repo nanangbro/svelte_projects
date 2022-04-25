@@ -57,6 +57,7 @@
 	import AnimateDirective from './components/animations/AnimateDirective.svelte';
 	import Visualiser from './components/eases/Visualiser.svelte';
 	import Clock from './components/svgs/Clock.svelte'
+	import BarChart from './components/svgs/BarChart.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -152,6 +153,7 @@
 	<AnimateDirective />
 	<Visualiser />
 	<Clock />
+	<BarChart />
 
 </main>
 
