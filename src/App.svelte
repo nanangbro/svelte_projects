@@ -60,6 +60,7 @@
 	import BarChart from './components/svgs/BarChart.svelte';
 	import AreaChart from './components/svgs/AreaChart.svelte';
 	import Scatterplot from './components/svgs/Scatterplot.svelte'
+	import CustomTransition from './components/svgs/CustomTransition.svelte'
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -158,6 +159,7 @@
 	<BarChart />
 	<AreaChart />
 	<Scatterplot />
+	<CustomTransition />
 
 </main>
 
