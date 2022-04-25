@@ -58,6 +58,7 @@
 	import Visualiser from './components/eases/Visualiser.svelte';
 	import Clock from './components/svgs/Clock.svelte'
 	import BarChart from './components/svgs/BarChart.svelte';
+	import AreaChart from './components/svgs/AreaChart.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -154,6 +155,7 @@
 	<Visualiser />
 	<Clock />
 	<BarChart />
+	<AreaChart />
 
 </main>
 
