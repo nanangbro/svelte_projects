@@ -59,6 +59,7 @@
 	import Clock from './components/svgs/Clock.svelte'
 	import BarChart from './components/svgs/BarChart.svelte';
 	import AreaChart from './components/svgs/AreaChart.svelte';
+	import Scatterplot from './components/svgs/Scatterplot.svelte'
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -156,6 +157,7 @@
 	<Clock />
 	<BarChart />
 	<AreaChart />
+	<Scatterplot />
 
 </main>
 
