@@ -66,6 +66,7 @@
 	import PannableActions from './components/actions/PannableActions.svelte';
 	import ClassDirective from './components/classes/ClassDirective.svelte';
 	import ShortHand from './components/classes/ShortHand.svelte';
+	import Slots from './components/compositions/Slots.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -170,6 +171,7 @@
 	<PannableActions />
 	<ClassDirective />
 	<ShortHand />
+	<Slots />
 
 </main>
 
