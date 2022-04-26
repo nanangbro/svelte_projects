@@ -1,25 +1,25 @@
 <script>
 	
-	import Counter from './components/Counter.svelte'
-	import Toggle from './components/Toggle.svelte'
-	import Img from './components/Img.svelte'
-	import String from './components/String.svelte'
-	import Statement from './components/Statement.svelte'
+	import Counter from './components/Counter.svelte';
+	import Toggle from './components/Toggle.svelte';
+	import Img from './components/Img.svelte';
+	import String from './components/String.svelte';
+	import Statement from './components/Statement.svelte';
 	import Condition from './components/Condition.svelte';
 	import Nested from './components/Nested.svelte';
 	import Info from './components/Info.svelte';
-	import IfLogin from './components/IfLogin.svelte'
-	import Comparison from './components/Comparison.svelte'
-	import EachYoutube from './components/EachYoutube.svelte'
+	import IfLogin from './components/IfLogin.svelte';
+	import Comparison from './components/Comparison.svelte';
+	import EachYoutube from './components/EachYoutube.svelte';
 	import KeyEachThing from './components/KeyEachThing.svelte'
 	import GenerateNumber from './components/GenerateNumber.svelte';
 	import MouseMove from './components/MouseMove.svelte'
 	import MouseMoveInlineHandler from './components/MouseMoveInlineHandler.svelte';
 	import EventModifier from './components/EventModifier.svelte';
-	import AlertCompEvent from './components/AlertCompEvents.svelte'
+	import AlertCompEvent from './components/AlertCompEvents.svelte';
 	import AlertEventForwarding from './components/AlertEventForwarding.svelte';
-	import CustomButtonComp from './components/CustomButton.svelte'
-	import TextInput from './components/TextInput.svelte'
+	import CustomButtonComp from './components/CustomButton.svelte';
+	import TextInput from './components/TextInput.svelte';
 	import NumericInput from './components/NumericInput.svelte';
 	import CheckboxInputs from './components/CheckboxInputs.svelte';
 	import GroupInputs from './components/GroupInputs.svelte';
@@ -32,10 +32,10 @@
 	import Dimensions from './components/Dimensions.svelte';
 	import BindThisCanvas from './components/BindThisCanvas.svelte';
 	import ComponentBindings from './components/ComponentBindings.svelte';
-	import OnMount from './components/OnMount.svelte'
+	import OnMount from './components/OnMount.svelte';
 	import OnDestroyIntervals from './components/OnDestroyIntervals.svelte';
 	import BeforeAndAfterUpdate from './components/BeforeAndAfterUpdate.svelte';
-	import Tick from './components/Tick.svelte'
+	import Tick from './components/Tick.svelte';
 	import Resetter from './components/stores/Resetter.svelte';
 	import Incrementer from './components/stores/Incrementer.svelte';
 	import Decrementer from './components/stores/Decrementer.svelte';
@@ -45,8 +45,8 @@
 	import DecrementerAutoSubscriptions from './components/stores/stores/auto_subscriptions/Decrementer.svelte';
 	import { countAutoSubscriptions } from './components/stores/stores/stores';
 	import { time, elapsed, countCustom } from './components/stores/stores/stores';
-	import Tweened from './components/motions/Tweened.svelte'
-	import Spring from './components/motions/Spring.svelte'
+	import Tweened from './components/motions/Tweened.svelte';
+	import Spring from './components/motions/Spring.svelte';
 	import TransitionsDirective from './components/transitions/TransitionsDirective.svelte';
 	import AddingParameters from './components/transitions/AddingParameters.svelte';
 	import InOut from './components/transitions/InOut.svelte';
@@ -56,12 +56,13 @@
 	import Deffered from './components/transitions/Deffered.svelte';
 	import AnimateDirective from './components/animations/AnimateDirective.svelte';
 	import Visualiser from './components/eases/Visualiser.svelte';
-	import Clock from './components/svgs/Clock.svelte'
+	import Clock from './components/svgs/Clock.svelte';
 	import BarChart from './components/svgs/BarChart.svelte';
 	import AreaChart from './components/svgs/AreaChart.svelte';
-	import Scatterplot from './components/svgs/Scatterplot.svelte'
-	import CustomTransition from './components/svgs/CustomTransition.svelte'
-	import ClickOutside from './components/actions/ClickOutside.svelte'
+	import Scatterplot from './components/svgs/Scatterplot.svelte';
+	import CustomTransition from './components/svgs/CustomTransition.svelte';
+	import ClickOutside from './components/actions/ClickOutside.svelte';
+	import LongpressActions from './components/actions/LongpressActions.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -162,6 +163,7 @@
 	<Scatterplot />
 	<CustomTransition />
 	<ClickOutside />
+	<LongpressActions />
 
 </main>
 
