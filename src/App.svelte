@@ -64,6 +64,7 @@
 	import ClickOutside from './components/actions/ClickOutside.svelte';
 	import LongpressActions from './components/actions/LongpressActions.svelte';
 	import PannableActions from './components/actions/PannableActions.svelte';
+	import ClassDirective from './components/classes/ClassDirective.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -166,6 +167,7 @@
 	<ClickOutside />
 	<LongpressActions />
 	<PannableActions />
+	<ClassDirective />
 
 </main>
 
