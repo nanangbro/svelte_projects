@@ -61,6 +61,7 @@
 	import AreaChart from './components/svgs/AreaChart.svelte';
 	import Scatterplot from './components/svgs/Scatterplot.svelte'
 	import CustomTransition from './components/svgs/CustomTransition.svelte'
+	import ClickOutside from './components/actions/ClickOutside.svelte'
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -160,6 +161,7 @@
 	<AreaChart />
 	<Scatterplot />
 	<CustomTransition />
+	<ClickOutside />
 
 </main>
 
