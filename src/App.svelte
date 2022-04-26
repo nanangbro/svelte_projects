@@ -63,6 +63,7 @@
 	import CustomTransition from './components/svgs/CustomTransition.svelte';
 	import ClickOutside from './components/actions/ClickOutside.svelte';
 	import LongpressActions from './components/actions/LongpressActions.svelte';
+	import PannableActions from './components/actions/PannableActions.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -164,6 +165,7 @@
 	<CustomTransition />
 	<ClickOutside />
 	<LongpressActions />
+	<PannableActions />
 
 </main>
 
