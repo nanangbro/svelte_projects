@@ -67,6 +67,7 @@
 	import ClassDirective from './components/classes/ClassDirective.svelte';
 	import ShortHand from './components/classes/ShortHand.svelte';
 	import Slots from './components/compositions/Slots.svelte';
+	import Box from './components/compositions/Box.svelte'
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -172,6 +173,12 @@
 	<ClassDirective />
 	<ShortHand />
 	<Slots />
+	<Box>
+		<h2>Hello!</h2>
+		<p>This is a box. It can contain anything.</p>
+	</Box>
+	
+	<Box/>
 
 </main>
 
