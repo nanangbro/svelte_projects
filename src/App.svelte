@@ -68,6 +68,7 @@
 	import ShortHand from './components/classes/ShortHand.svelte';
 	import Slots from './components/compositions/Slots.svelte';
 	import Box from './components/compositions/Box.svelte'
+	import ContactCard from './components/compositions/ContactCard.svelte'
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -177,8 +178,17 @@
 		<h2>Hello!</h2>
 		<p>This is a box. It can contain anything.</p>
 	</Box>
-	
 	<Box/>
+	<ContactCard>
+		<span slot="name">
+			P. Sherman
+		</span>
+	
+		<span slot="address">
+			42 Wallaby Way<br>
+			Sydney
+		</span>
+	</ContactCard>
 
 </main>
 
