@@ -69,6 +69,7 @@
 	import Slots from './components/compositions/Slots.svelte';
 	import Box from './components/compositions/Box.svelte'
 	import ContactCard from './components/compositions/ContactCard.svelte'
+	import Hoverable from './components/compositions/Hoverable.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -189,6 +190,7 @@
 			Sydney
 		</span>
 	</ContactCard>
+	<Hoverable />
 
 </main>
 
