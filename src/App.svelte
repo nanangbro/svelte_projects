@@ -71,6 +71,7 @@
 	import ContactCard from './components/compositions/ContactCard.svelte'
 	import Hoverable from './components/compositions/Hoverable.svelte';
 	import Profile from './components/compositions/Profile.svelte'
+	import Modal from './components/compositions/Modal.svelte'
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -193,6 +194,7 @@
 	</ContactCard>
 	<Hoverable />
 	<Profile />
+	<Modal />
 
 </main>
 
