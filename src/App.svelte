@@ -88,6 +88,8 @@
 	import Timer from './components/7guis/components/Timer.svelte';
 	import CRUD from './components/7guis/components/CRUD.svelte';
 	import CircleDrawer from './components/7guis/components/CircleDrawer.svelte';
+	import HackerNews from './components/miscellaneous/HackerNews.svelte';
+	import Immutable from './components/miscellaneous/Immutable.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -227,6 +229,8 @@
 	<Timer />
 	<CRUD />
 	<CircleDrawer />
+	<!-- <HackerNews /> -->
+	<Immutable />
 
 </main>
 
