@@ -74,6 +74,7 @@
 	import Modal from './components/compositions/Modal.svelte'
 	// import Map from './components/context_api/MapComp.svelte'
 	import FolderComp from './components/special_elements/FolderComp.svelte';
+	import ColorComp from './components/special_elements/ColorComp.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -199,6 +200,7 @@
 	<Modal />
 	<!-- <Map /> -->
 	<FolderComp />
+	<ColorComp />
 
 </main>
 
