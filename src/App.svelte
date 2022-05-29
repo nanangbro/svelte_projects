@@ -80,7 +80,8 @@
 	// import WindowBindingComp from './components/special_elements/WindowBindingComp.svelte';
 	import BodyComp from './components/special_elements/BodyComp.svelte';
 	import HeadComp from './components/special_elements/HeadComp.svelte';
-	import AudioPlayer from './components/module_context/AudioPlayer.svelte'
+	import AudioPlayer from './components/module_context/AudioPlayer.svelte';
+	import Debugging from './components/debugging/Debugging.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -213,6 +214,7 @@
 	<BodyComp />
 	<HeadComp />
 	<AudioPlayer />
+	<Debugging />
 
 </main>
 
