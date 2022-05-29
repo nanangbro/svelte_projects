@@ -82,6 +82,7 @@
 	import HeadComp from './components/special_elements/HeadComp.svelte';
 	import AudioPlayer from './components/module_context/AudioPlayer.svelte';
 	import Debugging from './components/debugging/Debugging.svelte';
+	import CounterGuis from './components/7guis/Counter.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -215,6 +216,7 @@
 	<HeadComp />
 	<AudioPlayer />
 	<Debugging />
+	<CounterGuis />
 
 </main>
 
