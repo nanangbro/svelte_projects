@@ -83,6 +83,7 @@
 	import AudioPlayer from './components/module_context/AudioPlayer.svelte';
 	import Debugging from './components/debugging/Debugging.svelte';
 	import CounterGuis from './components/7guis/Counter.svelte';
+	import TemperatureConverter from './components/7guis/components/TemperatureConverter.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -217,6 +218,7 @@
 	<AudioPlayer />
 	<Debugging />
 	<CounterGuis />
+	<TemperatureConverter />
 
 </main>
 
