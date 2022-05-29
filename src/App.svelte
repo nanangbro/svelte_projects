@@ -77,6 +77,8 @@
 	import ColorComp from './components/special_elements/ColorComp.svelte';
 	import ElementComp from './components/special_elements/ElementComp.svelte';
 	import WindowComp from './components/special_elements/WindowComp.svelte';
+	// import WindowBindingComp from './components/special_elements/WindowBindingComp.svelte';
+	import BodyComp from './components/special_elements/BodyComp.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -205,6 +207,8 @@
 	<ColorComp />
 	<ElementComp />
 	<WindowComp />
+	<!-- <WindowBindingComp /> -->
+	<BodyComp />
 
 </main>
 
