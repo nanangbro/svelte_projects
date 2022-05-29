@@ -82,11 +82,12 @@
 	import HeadComp from './components/special_elements/HeadComp.svelte';
 	import AudioPlayer from './components/module_context/AudioPlayer.svelte';
 	import Debugging from './components/debugging/Debugging.svelte';
-	import CounterGuis from './components/7guis/Counter.svelte';
+	import CounterGuis from './components/7guis/components/Counter.svelte';
 	import TemperatureConverter from './components/7guis/components/TemperatureConverter.svelte';
 	import FlightBooker from './components/7guis/components/FlightBooker.svelte';
 	import Timer from './components/7guis/components/Timer.svelte';
-	import CRUD from './components/7guis/components/CRUD.svelte'
+	import CRUD from './components/7guis/components/CRUD.svelte';
+	import CircleDrawer from './components/7guis/components/CircleDrawer.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -225,6 +226,7 @@
 	<FlightBooker />
 	<Timer />
 	<CRUD />
+	<CircleDrawer />
 
 </main>
 
