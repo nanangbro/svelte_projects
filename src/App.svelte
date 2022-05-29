@@ -72,6 +72,8 @@
 	import Hoverable from './components/compositions/Hoverable.svelte';
 	import Profile from './components/compositions/Profile.svelte'
 	import Modal from './components/compositions/Modal.svelte'
+	// import Map from './components/context_api/MapComp.svelte'
+	import FolderComp from './components/special_elements/FolderComp.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -195,6 +197,8 @@
 	<Hoverable />
 	<Profile />
 	<Modal />
+	<!-- <Map /> -->
+	<FolderComp />
 
 </main>
 
