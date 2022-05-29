@@ -84,6 +84,7 @@
 	import Debugging from './components/debugging/Debugging.svelte';
 	import CounterGuis from './components/7guis/Counter.svelte';
 	import TemperatureConverter from './components/7guis/components/TemperatureConverter.svelte';
+	import FlightBooker from './components/7guis/components/FlightBooker.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -219,6 +220,7 @@
 	<Debugging />
 	<CounterGuis />
 	<TemperatureConverter />
+	<FlightBooker />
 
 </main>
 
