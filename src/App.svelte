@@ -75,6 +75,7 @@
 	// import Map from './components/context_api/MapComp.svelte'
 	import FolderComp from './components/special_elements/FolderComp.svelte';
 	import ColorComp from './components/special_elements/ColorComp.svelte';
+	import ElementComp from './components/special_elements/ElementComp.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -201,6 +202,7 @@
 	<!-- <Map /> -->
 	<FolderComp />
 	<ColorComp />
+	<ElementComp />
 
 </main>
 
@@ -257,13 +259,5 @@
 		letter-spacing: 0.12em;
 		color: #676778;
 		font-weight: 400;
-	}
-
-	.maxSVG{
-		max-width: 200px;
-	}
-
-	.centered span {
-		will-change: filter;
 	}
 </style>
