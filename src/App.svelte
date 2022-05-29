@@ -76,6 +76,7 @@
 	import FolderComp from './components/special_elements/FolderComp.svelte';
 	import ColorComp from './components/special_elements/ColorComp.svelte';
 	import ElementComp from './components/special_elements/ElementComp.svelte';
+	import WindowComp from './components/special_elements/WindowComp.svelte';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -203,6 +204,7 @@
 	<FolderComp />
 	<ColorComp />
 	<ElementComp />
+	<WindowComp />
 
 </main>
 
